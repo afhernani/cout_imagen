@@ -52,7 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cout.cs" />
+    <Compile Include="Imagen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextUtils.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

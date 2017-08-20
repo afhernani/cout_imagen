@@ -55,5 +55,11 @@
   <ItemGroup>
     <None Include="app.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cout\cout.csproj">
+      <Project>{5055fb54-fd85-4755-933d-996b6664b8fa}</Project>
+      <Name>cout</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

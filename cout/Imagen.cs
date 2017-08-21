@@ -104,7 +104,7 @@ namespace syscout
 			using (StreamWriter stw = new StreamWriter(filename)) {
 				stw.WriteLine("P3");
 				stw.WriteLine("# make for hernani ");
-				stw.WriteLine("{0} {1}i", Width, Heigh);
+				stw.WriteLine("{0} {1}", Width, Heigh);
 				stw.WriteLine("{0}", Maxi);
 				for (int i = 0; i < _Pixels.Length; i++) {
 					stw.Write("{0} {1} {2} ", _Pixels[i].r, _Pixels[i].g,

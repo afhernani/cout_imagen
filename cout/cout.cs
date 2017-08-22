@@ -71,6 +71,7 @@ namespace syscout
 						ch = Convert.ToChar(_str.Read());
 					}
 					return get();
+				case '\r':
 				case '\n':
 					return get();
 				case ' ':
@@ -110,7 +111,7 @@ namespace syscout
 						
 						while (!_str.EndOfStream) {
 							ch = Convert.ToChar(_str.Peek());
-							if (ch !=' ' && ch !='\n') {
+							if (ch !=' ' && ch !='\n' && ch !='\r') {
 								ch = Convert.ToChar(_str.Read());
 								name.Append(ch);
 							} else {
